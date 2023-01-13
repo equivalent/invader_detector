@@ -53,7 +53,7 @@ git clone git@github.com:equivalent/invader_detector.git
 cd invader_detector
 bin/setup
 
-bundle exec exe/run
+bundle exec bin/run
 ```
 
 to run tests
@@ -71,6 +71,6 @@ rake
 #### Usage
 
 ```
-bundle exec exe/run                           # run with sample radar data
-bundle exec exe/run /path/to/radar_data.txt
+bundle exec bin/run                           # run with sample radar data
+bundle exec bin/run /path/to/radar_data.txt
 ```
