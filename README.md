@@ -34,8 +34,8 @@ medium probability = red color | high probability = magenta
 ## Install - gem from Github releases
 
 ```
-wget https://github.com/equivalent/invader_detector/releases/download/0.0.2/invader_detector-0.0.2.gem
-gem install invader_detector-0.0.2.gem
+wget https://github.com/equivalent/invader_detector/releases/download/0.0.3/invader_detector-0.0.3.gem
+gem install invader_detector-0.0.3.gem
 ```
 
 #### Usage
