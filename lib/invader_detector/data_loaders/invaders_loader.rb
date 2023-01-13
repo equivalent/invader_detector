@@ -26,7 +26,7 @@ module InvaderDetector
     end
 
     def read(file_name)
-      File.read(invaders_folder + file_name)
+      File.read(invaders_folder.join(file_name))
     end
   end
 end
