@@ -6,8 +6,8 @@
 
 * How it works [Youtube video](https://youtu.be/O4Jw-wbhU3g)
 * Demonstrating (strong) SOLID design principles is a priority not algorithm performance
-* Screen Blinking is not a bug but a feature. There's a dealy [implemented](https://github.com/equivalent/invader_detector/blob/master/lib/invader_detector/controller.rb#L27) = feels like a real radar this way
-* Every Invader has multiple colors based on probability of radar area. More info: [invaders.yml](https://github.com/equivalent/invader_detector/blob/master/data/invaders.yml) and [RadarFieldView#color](https://github.com/equivalent/invader_detector/blob/master/lib/invader_detector/views/radar_field_view.rb#L20)
+* Screen Blinking is not a bug but a feature. There's a delay [implemented](https://github.com/equivalent/invader_detector/blob/master/lib/invader_detector/controller.rb#L27) = feels like a real radar this way
+* Every Invader has multiple colors based on probability of a radar field. More info: [invaders.yml](https://github.com/equivalent/invader_detector/blob/master/data/invaders.yml) and [RadarFieldView#color](https://github.com/equivalent/invader_detector/blob/master/lib/invader_detector/views/radar_field_view.rb#L20)
 
 #### Squid
 
