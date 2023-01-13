@@ -40,7 +40,8 @@ gem install invader_detector
 git clone git@github.com:equivalent/invader_detector.git
 cd invader_detector
 bin/setup
-bundle exec bin/run
+
+bundle exec exe/run
 ```
 
 to run tests
@@ -50,12 +51,14 @@ bundle exec rspec
 
 # or
 rake spec
+
+# or to run tests with rubocop
+rake
 ```
 
 ## Usage
 
 ```
-bundle exec bin/run                           # run with sample radar data
-bundle exec bin/run /path/to/radar_data.txt
-```
+bundle exec exe/run                           # run with sample radar data
+bundle exec exe/run /path/to/radar_data.txt
 ```
