@@ -31,7 +31,7 @@ medium probability = red color | high probability = magenta
 <img width="220" alt="squid_and_crab" src="https://user-images.githubusercontent.com/721990/212198990-00e71552-8517-4c67-9a34-daf7f6d46b51.png">
 
 
-## Installation built gem from Github releases
+## Install - gem from Github releases
 
 ```
 wget https://github.com/equivalent/invader_detector/releases/download/0.0.2/invader_detector-0.0.2.gem
@@ -45,7 +45,7 @@ invader_detector                           # run with sample radar data
 invader_detector /path/to/radar_data.txt
 ```
 
-## Installation from source
+## Install - build from source
 
 
 ```
