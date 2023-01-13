@@ -1,0 +1,10 @@
+-
+  file: 'crab_invader.txt'
+  low_probability_color: 'yellow'
+  medium_probability_color: 'red'
+  high_probability_color: 'magenta'
+-
+  file: 'squid_invader.txt'
+  low_probability_color: 'light_yellow'
+  medium_probability_color: 'blue'
+  high_probability_color: 'cyan'

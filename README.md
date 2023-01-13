@@ -1,33 +1,61 @@
 # InvaderDetector
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/invader_detector`. To experiment with that code, run `bin/console` for an interactive prompt.
 
-TODO: Delete this and the text above, and describe your gem
+[![Watch the video](https://user-images.githubusercontent.com/721990/212201748-8471504f-d1ff-4968-8bd0-158412444e5f.png)](https://www.youtube.com/watch?v=O4Jw-wbhU3g)
+
+
+* See how it works [Youtube video](https://youtu.be/O4Jw-wbhU3g)
+* I'm focusing on demonstrating SOLID design principle not on algorithm performance
+* Every Invader has multiple colors based on probability of radar area. More info: [invaders.yml](https://github.com/equivalent/invader_detector/blob/master/data/invaders.yml) and [RadarFieldView#color](https://github.com/equivalent/invader_detector/blob/master/lib/invader_detector/views/radar_field_view.rb#L20)
+
+#### Squid
+
+medium probability = blue color | high probability = cyan color
+<p align="left">
+<img width="199" alt="squid_medium" src="https://user-images.githubusercontent.com/721990/212198981-33a4bab6-064c-459b-8805-24efc451189c.png">
+<img width="168" alt="squid_high" src="https://user-images.githubusercontent.com/721990/212198987-ddcfc27d-9931-40e0-88d9-7360c3d60486.png">
+</p>
+
+#### Crab
+
+medium probability = red color | high probability = magenta
+
+<p align="left">
+<img width="151" alt="crab_medium" src="https://user-images.githubusercontent.com/721990/212198997-4d6993ce-846b-465b-97dd-2a44529ebdcd.png">
+<img width="172" alt="crab_high" src="https://user-images.githubusercontent.com/721990/212198999-c7b4a591-fea8-491d-844d-c4531b043a82.png">
+</p>
+
+#### Multiple
+
+<img width="220" alt="squid_and_crab" src="https://user-images.githubusercontent.com/721990/212198990-00e71552-8517-4c67-9a34-daf7f6d46b51.png">
 
 ## Installation
 
-Install the gem and add to the application's Gemfile by executing:
+gem install invader_detector
 
-    $ bundle add invader_detector
+## Installation from source
 
-If bundler is not being used to manage dependencies, install the gem by executing:
 
-    $ gem install invader_detector
+```
+git clone git@github.com:equivalent/invader_detector.git
+cd invader_detector
+bin/setup
+bundle exec bin/run
+```
+
+to run tests
+
+```
+bundle exec rspec
+
+# or
+rake spec
+```
 
 ## Usage
 
-TODO: Write usage instructions here
-
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/invader_detector.
-
-## License
-
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+```
+bundle exec bin/run                           # run with sample radar data
+bundle exec bin/run /path/to/radar_data.txt
+```
+```
