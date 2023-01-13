@@ -64,7 +64,7 @@ bundle exec rspec
 # or
 rake spec
 
-# or to run tests with rubocop
+# or to run tests & rubocop
 rake
 ```
 
