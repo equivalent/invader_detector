@@ -1,6 +1,7 @@
-require "colorized_string"
+require 'pathname'
 require "forwardable"
 require "yaml"
+require "colorized_string"
 
 require_relative "invader_detector/version"
 require_relative "invader_detector/config"
