@@ -1,7 +1,8 @@
 module InvaderDetector
   class InvadersLoader
     def call
-      YAML.load_file("./data/invaders.yml").map do |invader_data|
+      yml = InvaderDetector.root.join("data", "invaders.yml")
+      YAML.load_file(yml).map do |invader_data|
         load_invader(invader_data)
       end
     end
@@ -18,7 +19,7 @@ module InvaderDetector
     end
 
     def invaders_folder
-      Pathname.new("./data/invaders")
+      InvaderDetector.root.join("data", "invaders")
     end
 
     def parse_invader(raw)

@@ -1,7 +1,7 @@
 module InvaderDetector
   class RadarLoader
     def self.example
-      File.read("./data/radar_example.txt")
+      InvaderDetector.root.join("data", "radar_example.txt").read
     end
 
     def call(raw)

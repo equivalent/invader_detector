@@ -1,4 +1,4 @@
-require 'pathname'
+require "pathname"
 require "forwardable"
 require "yaml"
 require "colorized_string"
@@ -31,5 +31,9 @@ module InvaderDetector
 
   def self.run
     InvaderDetector::Controller.new.call
+  end
+
+  def self.root
+    Pathname.new("#{File.dirname(__FILE__)}/..")
   end
 end

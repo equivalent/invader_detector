@@ -17,9 +17,9 @@ RSpec.configure do |config|
 end
 
 def crab_invader_raw
-  File.read("./data/invaders/crab_invader.txt")
+  InvaderDetector.root.join("data", "invaders/crab_invader.txt").read
 end
 
 def squid_invader_raw
-  File.read("./data/invaders/squid_invader.txt")
+  InvaderDetector.root.join("data", "invaders/squid_invader.txt").read
 end
