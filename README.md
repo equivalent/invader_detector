@@ -1,5 +1,10 @@
 # InvaderDetector
 
+Program/Gem takes a radar sample as an argument and reveal possible locations of  fictional space invaders.
+
+* [Squid](https://github.com/equivalent/invader_detector/blob/master/data/invaders/squid_invader.txt)
+* [Crab](https://github.com/equivalent/invader_detector/blob/master/data/invaders/crab_invader.txt)
+* [Example radar](https://github.com/equivalent/invader_detector/blob/master/data/radar_example.txt)
 
 [![Watch the video](https://user-images.githubusercontent.com/721990/212201748-8471504f-d1ff-4968-8bd0-158412444e5f.png)](https://www.youtube.com/watch?v=O4Jw-wbhU3g)
 
@@ -9,7 +14,7 @@
 * Screen Blinking is not a bug but a feature. There's a delay [implemented](https://github.com/equivalent/invader_detector/blob/master/lib/invader_detector/controller.rb#L27) = feels like a real radar this way
 * Every Invader has multiple colors based on probability of a radar field. More info: [invaders.yml](https://github.com/equivalent/invader_detector/blob/master/data/invaders.yml) and [RadarFieldView#color](https://github.com/equivalent/invader_detector/blob/master/lib/invader_detector/views/radar_field_view.rb#L20)
 
-#### Squid
+#### [Squid](https://github.com/equivalent/invader_detector/blob/master/data/invaders/squid_invader.txt)
 
 medium probability = blue color | high probability = cyan color
 <p align="left">
@@ -17,7 +22,7 @@ medium probability = blue color | high probability = cyan color
 <img width="168" alt="squid_high" src="https://user-images.githubusercontent.com/721990/212198987-ddcfc27d-9931-40e0-88d9-7360c3d60486.png">
 </p>
 
-#### Crab
+#### [Crab](https://github.com/equivalent/invader_detector/blob/master/data/invaders/crab_invader.txt)
 
 medium probability = red color | high probability = magenta
 
