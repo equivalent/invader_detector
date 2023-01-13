@@ -4,8 +4,8 @@
 [![Watch the video](https://user-images.githubusercontent.com/721990/212201748-8471504f-d1ff-4968-8bd0-158412444e5f.png)](https://www.youtube.com/watch?v=O4Jw-wbhU3g)
 
 
-* See how it works [Youtube video](https://youtu.be/O4Jw-wbhU3g)
-* I'm focusing on demonstrating SOLID design principle not on algorithm performance
+* How it works [Youtube video](https://youtu.be/O4Jw-wbhU3g)
+* Demonstrating SOLID design principles is a priority not algorithm performance
 * Every Invader has multiple colors based on probability of radar area. More info: [invaders.yml](https://github.com/equivalent/invader_detector/blob/master/data/invaders.yml) and [RadarFieldView#color](https://github.com/equivalent/invader_detector/blob/master/lib/invader_detector/views/radar_field_view.rb#L20)
 
 #### Squid
